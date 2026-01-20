@@ -69,7 +69,7 @@ class Play extends Phaser.Scene {
         if (this.gameOver && Phaser.Input.Keyboard.JustDown(keyLEFT)) {
             this.scene.start("menuScene")
         }
-        this.starfield.tilePositionX -= 4 * 1/delta;
+        this.starfield.tilePositionX -= 0.4 * delta;
 
         // call object update functions if game is not over
         if(!this.gameOver){
